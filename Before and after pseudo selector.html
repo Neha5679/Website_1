@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and after pseudo selector</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&family=Fjalla+One&family=Oswald:wght@300&family=Rubik:wght@300&family=Russo+One&family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <style>
+         body{
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            
+        }
+        
+        header::before{
+            content: "";
+            background-image: url('https://images.unsplash.com/photo-1576749288264-207936efb479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=380&q=80');
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+           opacity: 0.5;
+         }
+         section{
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+            height: 344px;
+            justify-content: center;
+         }
+         section p{
+            font-size: 25px;
+         }
+         /* section::before{
+            content: "This is my content before";
+         } */
+
+         h1{
+            font-size: 2.5rem;
+         }
+         .navigation{
+            font-family: 'Russo One', sans-serif;
+            display: flex;
+            font-size: 20px;
+         }
+         li{
+            list-style: none;
+            padding: 20px 23px;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Contact us</li>
+                <li class="item">Service</li>
+            </ul>
+
+        </nav>
+    </header>
+        <section>
+            <h1>Welcome to coding World</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Provident nam laudantium eos esse doloribus facilis reprehenderit ipsam beatae doloremque.
+               Beatae dicta, in, tempore molestiae dolore, officia unde inventore labore commodi cum 
+               reiciendis praesentium vel?</p>
+
+        </section>
+        
+</body>
+</html>
